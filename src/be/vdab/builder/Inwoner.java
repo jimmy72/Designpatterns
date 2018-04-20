@@ -31,32 +31,32 @@ public class Inwoner {
 		private boolean gescheiden;
 		
 		public InwonerBuilder metVoornaam(String voornaam) { 
-		this.voornaam = voornaam;
+			this.voornaam = voornaam;
 		return this;
 		}
 		public InwonerBuilder metFamilienaam(String familienaam) {
-		this.familienaam = familienaam;
-		return this;
+			this.familienaam = familienaam;
+			return this;
 		}
 		public InwonerBuilder metAantalKinderen(int aantalKinderen) {
-		this.aantalKinderen = aantalKinderen;
-		return this;
+			this.aantalKinderen = aantalKinderen;
+			return this;
 		}
 		public InwonerBuilder metAantalKerenVerhuisd(int aantalKerenVerhuisd) {
-		this.aantalKerenVerhuisd = aantalKerenVerhuisd;
-		return this;
+			this.aantalKerenVerhuisd = aantalKerenVerhuisd;
+			return this;
 		}
 		public InwonerBuilder metGehuwd(boolean gehuwd) {
-		this.gehuwd = gehuwd;
-		return this;
+			this.gehuwd = gehuwd;
+			return this;
 		}
 		public InwonerBuilder metGescheiden(boolean gescheiden) {
-		this.gescheiden = gescheiden;
-		return this;
+			this.gescheiden = gescheiden;
+			return this;
 		}
 		public Inwoner maakInwoner() {
-		return new Inwoner(voornaam, familienaam, aantalKinderen,
-		aantalKerenVerhuisd, gehuwd, gescheiden);
+			return new Inwoner(voornaam, familienaam, aantalKinderen,
+			aantalKerenVerhuisd, gehuwd, gescheiden);
 		}
 	}
 }
