@@ -5,6 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		Versnellingsbak.INSTANCE.schakelOmhoog();
 		Versnellingsbak.INSTANCE.schakelOmlaag();
+		Versnellingsbak.INSTANCE.schakelOmlaag();
 	}
 
 }
