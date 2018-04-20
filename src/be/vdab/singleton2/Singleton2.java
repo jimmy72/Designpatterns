@@ -1,5 +1,7 @@
 package be.vdab.singleton2;
 
+import java.util.Random;
+
 public enum Singleton2 {
 	INSTANCE;
 	
@@ -23,13 +25,14 @@ public enum Singleton2 {
 	private int vorigeIndex = -1;
 	
 	public void antwoord() {
-		int randomIndex = (int) (Math.random() * antwoorden.length);
-		while(randomIndex == vorigeIndex) {
-			randomIndex = (int) (Math.random() * antwoorden.length);
+		Random random = new Random();
+		int antwoordIndex = random.nextInt(antwoorden.length);
+		while(antwoordIndex == vorigeIndex) {
+			antwoordIndex = (int) (Math.random() * antwoorden.length);
 		}
-		vorigeIndex = randomIndex;
+		vorigeIndex = antwoordIndex;
 		//System.out.println("vorige index: " + vorigeIndex);
-		System.out.println("Antwoord: " + antwoorden[randomIndex]);
+		System.out.println("Antwoord: " + antwoorden[antwoordIndex]);
 	}
 			
 }
