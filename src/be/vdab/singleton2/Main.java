@@ -52,7 +52,7 @@ public class Main {
 		Singleton2.INSTANCE.antwoord();
 		Singleton2.INSTANCE.antwoord();
 		Singleton2.INSTANCE.antwoord();
-		
+		Singleton2.INSTANCE.antwoord();
 		
 	}
 
