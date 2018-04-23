@@ -10,12 +10,15 @@ public class Stereoketen {
 	private boolean gestart;
 	
 	public void start() {
-		versterker.start();
-		equalizer.start();
-		if (huidigeGeluidsbron != null) {
-			huidigeGeluidsbron.start();
+		if(!gestart) {
+			versterker.start();
+			equalizer.start();
+			if (huidigeGeluidsbron != null) {
+				huidigeGeluidsbron.start();
+			}
+			gestart = true;
 		}
-		gestart = true;
+		
 	}
 	public void stop() {
 		versterker.stop();
