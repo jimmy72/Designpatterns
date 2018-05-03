@@ -7,6 +7,7 @@ public class Main {
 		
 		Kalkoen wildeKalkoen = new WildeKalkoen();
 		System.out.println("De kalkoen zegt:");
+		//Methods van oude interface
 		wildeKalkoen.klok();
 		wildeKalkoen.vlieg();
 		
@@ -16,11 +17,12 @@ public class Main {
 		
 		Eend kalkoenAdapter = new KalkoenAdapter(wildeKalkoen);
 		System.out.println("De kalkoenadapter zegt:");
+		//We kunnen een kalkoen doorgeven die vermomd is als een eend
 		testEend(kalkoenAdapter);
 		
 
 	}
-	
+	//De nieuwe interface verwacht een eend
 	public static void testEend(Eend eend) {
 		eend.kwaak();
 		eend.vlieg();
